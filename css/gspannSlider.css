@@ -1,0 +1,99 @@
+*{margin:0;
+  padding:0;}
+
+
+
+#slider{
+width:100%;
+height:500px;
+position:relative;
+overflow:hidden;
+}
+
+.slides{
+width:400%;
+height:100%;
+position:relative;
+-webkit-animation:slide 30s infinite;
+-moz-animation:slide 30s infinite;
+animation:slide 15s infinite;
+}
+.slider{
+width:25%;
+height:100%;
+float:left;
+position:relative;
+z-index:1;
+overflow:hidden;
+}
+
+.image img{
+width:100%;
+height: auto;
+}
+
+
+.legend {
+    position: absolute;
+    bottom: 218px;
+    width: 83%;
+    padding: 51px;
+    text-align: center;
+    margin-left: 8%;
+}
+.carousel-caption {
+    top: -30%;
+    right: 15%;
+    left: 15%;
+}
+.carousel-caption h3 {
+font-family: museo-slab,serif;
+padding: 10px;
+font-weight: 300;
+font-size: 41px;
+background: rgba(52,73,94,.9);
+color: white;
+}
+.company-name {
+font-family: aller,sans-serif;
+font-weight: bold;
+}
+.heading-divider {
+font-family: proxima-nova,sans-serif;
+}
+@media (max-width: 1200px){
+#slider {
+display: none;
+}
+}
+
+@-webkit-keyframes slide{
+0%{
+margin-left:0%;
+}
+21%{
+margin-left:0%;
+}
+25%{
+margin-left:-100%;
+}
+46%{
+margin-left:-100%;
+}
+50%{
+margin-left:-200%;
+}
+71%{
+margin-left:-200%;
+}
+75%{
+margin-left:-200%;
+}
+96%{
+margin-left:-200%;
+}
+100%{
+    margin-left:-200%;  
+}
+}
+  
